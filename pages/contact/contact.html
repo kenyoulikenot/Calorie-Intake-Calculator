@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      DAILY CALORIE INTAKE CALCULATOR
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h2>Welcome to the Calorie Intake Calculator!</h2>
+  <br/> <br/>
+  <p>
+
+    <ion-item>
+    <ion-label color="dark"> Enter Your Sex: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="gender">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+    </ion-select>
+
+</ion-item>
+  <ion-item>
+  <ion-label>Enter your weight (Kg)  </ion-label>
+  <ion-input type="number" [(ngModel)]="weight"></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label>Enter your Height (cm): </ion-label>
+  <ion-input type="number" [(ngModel)] ="height"></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label>Enter your age: </ion-label>
+  <ion-input type="number" [(ngModel)] ="age"></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label color="dark"> Activity Level: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="activity">
+      <ion-option value="1.2">Little or no exercise</ion-option>
+      <ion-option value="1.4"> Light Exercise</ion-option>
+      <ion-option value="1.6"> Moderate Exercise</ion-option>
+      <ion-option value="1.75"> Hard Exercise</ion-option>
+      <ion-option value="2.0"> Very Hard Exercise</ion-option>
+      <ion-option value="2.3"> Professional Athlete</ion-option>
+    </ion-select>
+
+</ion-item>
+
+
+
+  <button ion-button color="secondary" (click)="calculatedci()">
+  Calculate </button>
+
+  <ion-item *ngIf="dci">
+  <h2>Your Daily Calorie Intake is: {{dci}} Calories per day</h2>
+  </ion-item>
+
+
+</ion-content>
