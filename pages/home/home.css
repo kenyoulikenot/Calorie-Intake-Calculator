@@ -2,9 +2,13 @@ ion-content {
    background-color: #F2D388
 }
 h2 {
-  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center
+
   }
 
+
 p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center
 }
